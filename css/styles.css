@@ -1,0 +1,142 @@
+
+.imgLogo{
+    width: 200px;
+    padding: 0.5rem;
+}
+
+
+
+.footer
+{
+    
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0;
+    position: sticky;
+    background: rgb(85, 72, 158);    
+}
+
+
+
+.pedidos{
+    background: rgb(143, 245, 198);
+}
+.mozo{
+    background: rgb(250, 50, 50);
+}
+
+
+.intro{
+    background : linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.5)), url("../img/hambur3.jpg");
+
+    /* background-image: url("../img/hambur3.jpg"); */
+    min-height: 90vh;
+    height: 90%;
+    /* width: 100%; */
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat:repeat;
+    /* position:absolute; */
+    color: rgb(0, 0, 0);    
+    /* opacity: 0.4; */
+    padding-bottom: 1rem;
+}
+
+.tituloMenu{    
+    text-align: center;
+    font-size: 2.3rem;
+    padding: .5rem;
+    color: rgb(61, 53, 50);
+    
+}
+
+.menuSti
+{
+    top: 0;
+    position: sticky;
+}
+
+.tablaBoton{
+    display: flex;
+}
+
+td img
+{
+    height: 4rem;
+    width: auto;
+}
+tr{
+    vertical-align: middle;
+}
+
+.categoria{
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+table{
+    width: 100%;
+}
+
+.btnAgregar{
+    width: 150px; 
+}
+
+.botonFijoFinalizar
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.botonFijoFinalizar button
+{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 182, 182);
+
+}
+.botonFijoFinalizar button:hover
+{   
+    background: rgb(255, 255, 255);
+    color: rgb(80, 4, 4);
+
+}
+
+
+/* MESAS */
+
+.seccionMesas{
+    display: flex;
+    background: rgb(182, 86, 86);
+}
+
+.primerPiso
+{
+    background: rgb(71, 185, 115);
+    height: 400px;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.btnMesa
+{
+    background: #000;
+    color: chartreuse;
+    height: 4rem;
+    width: 6rem;  
+}
+
+.btnMesaLarga
+{
+    background: #000;
+    color: chartreuse;
+    height: 4rem;
+    width: 9rem;  
+}
+
+.filaMesas
+{
+    padding-top: 4rem;
+}
