@@ -31,16 +31,12 @@
 .intro{
     background : linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.5)), url("../img/hambur3.jpg");
 
-    /* background-image: url("../img/hambur3.jpg"); */
     min-height: 90vh;
     height: 90%;
-    /* width: 100%; */
     background-attachment: fixed;
     background-size: cover;
     background-repeat:repeat;
-    /* position:absolute; */
-    color: rgb(0, 0, 0);    
-    /* opacity: 0.4; */
+    color: rgb(0, 0, 0);
     padding-bottom: 1rem;
 }
 
@@ -56,10 +52,12 @@
 {
     top: 0;
     position: sticky;
+    background-color: aqua;
 }
 
 .tablaBoton{
     display: flex;
+    
 }
 
 td img
@@ -139,4 +137,10 @@ table{
 .filaMesas
 {
     padding-top: 4rem;
+}
+
+.footer button
+{
+    margin: 15px;
+    padding: 1rem;
 }
