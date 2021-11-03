@@ -55,13 +55,27 @@
 }
 
 .tablaBoton{
-    display: flex;
     
+    display: inline-flex;
+    padding: 1rem;
 }
+
+.reducirBoton {
+
+    padding: 0.3rem;
+    font-weight: 300;
+    height: 2.5rem;
+}
+
+.precio{
+    font-weight: 500;
+    padding: .5rem;
+}
+
 
 td img
 {
-    height: 4rem;
+    height: 3rem;
     width: auto;
 }
 tr{
