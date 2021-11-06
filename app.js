@@ -26,6 +26,12 @@ app.get('/Productos',function(req,res){
     })
 })
 
+app.get('/Login',function(req,res){
+    res.render('login',{
+        nombre :'Santuli'
+    })
+})
+
 
 app.get('/estadistica',function(req,res){
     res.render('estadisticas',{
