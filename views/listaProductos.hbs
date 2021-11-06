@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    
+
+    <title>Document</title>
+</head>
+<body class="container-fluid">    
+    
+    
+    {{!-- HEADER --}}
+
+    {{!-- ME TRAIGO EL ARCHIVO HEADERS DE VIEWS/PARTIALS/HEADERS --}}
+    {{>headers}}
+
+    {{!-- <header>      
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">          
+        <div class="container-fluid collapse navbar-collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-left">
+              <li class="nav-item">
+                <img src="img/logoPatagonia.png"  class ="imgLogo" alt="" >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="mostrarMesas">Mesas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/cargarPedido.html">Cargar Pedido</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/listaProductos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/estadisticas.html">Estadisticas</a>
+              </li>
+            </ul>  
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">{{nombre}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Sing in</a>
+                </li>                      
+            </ul>
+        </div>              
+      </nav>
+    </header> --}}
+
+    <div class=" paginaPrincipal intro">
+      <div>
+          <h2 class="tituloMenu">Menu de productos</h2>
+      </div>
+      <!-- <div class="row">
+          <div class="col-md-12 text-right">
+              <button class="btn btn-success badge-pill btnAgregar" >Agregar</button>
+          </div>
+      </div> -->
+      <div class="tabla">
+        <table class="table table-striped table-responsive">            
+
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Producto</th>
+                <th scope="col" class="d-none d-lg-table-cell">Descripcion</th>
+                <th scope="col">Imagen</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"></th>
+                    <td colspan="3" class="categoria">Hamburguesas</td>
+                    <td><button class="btn btn-success badge-pill btnAgregar" >Agregar</button></td>
+
+                </tr>
+                
+              <tr>
+                <th scope="row">1</th>
+                <td>Doble cuarto libra con queso</td>
+                <td class="d-none d-lg-table-cell">Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXUf0Vf/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton">
+                  <button type="button" class="btn btn-primary">Editar</button> 
+                  <button type="button" class="btn btn-danger">Eliminar</button>
+                  <button type="button" class="btn btn-secondary">Habilitado</button>
+                </td>                
+                
+
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>McFiesta</td>
+                <td class="d-none d-lg-table-cell">Hamburguesa elaborada con carne 100% de carne vacuna, mayonesa, lechuga, tomate.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXxkywA/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton">
+                  <button type="button" class="btn btn-primary">Editar</button> 
+                  <button type="button" class="btn btn-danger">Eliminar</button>
+                  <button type="button" class="btn btn-secondary">Habilitado</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Big Mac</td>
+                <td class="d-none d-lg-table-cell">Quizás sean las dos hamburguesas de carne 100% vacuna con esa salsa especial y queso derretido, el toque de cebolla y la frescura de la lechuga o el crocante del pepino, lo que la hace la hamburguesa más famosa del mundo. Un sabor único.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXEH2NW/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton">
+                  <button type="button" class="btn btn-primary">Editar</button> 
+                  <button type="button" class="btn btn-danger">Eliminar</button>
+                  <button type="button" class="btn btn-success">Deshabilitado</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Doble cuarto libra con queso</td>
+                <td class="d-none d-lg-table-cell">Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXUf0Vf/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton">
+                  <button type="button" class="btn btn-primary">Editar</button> 
+                  <button type="button" class="btn btn-danger">Eliminar</button>
+                  <button type="button" class="btn btn-secondary">Habilitado</button>
+                </td>                
+                
+
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>McFiesta</td>
+                <td class="d-none d-lg-table-cell">Hamburguesa elaborada con carne 100% de carne vacuna, mayonesa, lechuga, tomate.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXxkywA/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton">
+                  <button type="button" class="btn btn-primary">Editar</button> 
+                  <button type="button" class="btn btn-danger">Eliminar</button>
+                  <button type="button" class="btn btn-secondary">Habilitado</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Big Mac</td>
+                <td class="d-none d-lg-table-cell">Quizás sean las dos hamburguesas de carne 100% vacuna con esa salsa especial y queso derretido, el toque de cebolla y la frescura de la lechuga o el crocante del pepino, lo que la hace la hamburguesa más famosa del mundo. Un sabor único.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXEH2NW/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton">
+                  <button type="button" class="btn btn-primary">Editar</button> 
+                  <button type="button" class="btn btn-danger">Eliminar</button>
+                  <button type="button" class="btn btn-secondary">Habilitado</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Doble cuarto libra con queso</td>
+                <td class="d-none d-lg-table-cell">Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXUf0Vf/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton">
+                  <button type="button" class="btn btn-primary">Editar</button> 
+                  <button type="button" class="btn btn-danger">Eliminar</button>
+                  <button type="button" class="btn btn-secondary">Habilitado</button>
+                </td>                
+                
+
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>McFiesta</td>
+                <td class="d-none d-lg-table-cell">Hamburguesa elaborada con carne 100% de carne vacuna, mayonesa, lechuga, tomate.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXxkywA/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton">
+                  <button type="button" class="btn btn-primary">Editar</button> 
+                  <button type="button" class="btn btn-danger">Eliminar</button>
+                  <button type="button" class="btn btn-secondary">Habilitado</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Big Mac</td>
+                <td class="d-none d-lg-table-cell">Quizás sean las dos hamburguesas de carne 100% vacuna con esa salsa especial y queso derretido, el toque de cebolla y la frescura de la lechuga o el crocante del pepino, lo que la hace la hamburguesa más famosa del mundo. Un sabor único.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXEH2NW/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton">
+                  <button type="button" class="btn btn-primary">Editar</button> 
+                  <button type="button" class="btn btn-danger">Eliminar</button>
+                  <button type="button" class="btn btn-secondary">Habilitado</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Doble cuarto libra con queso</td>
+                <td class="d-none d-lg-table-cell">Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXUf0Vf/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton">
+                  <button type="button" class="btn btn-primary">Editar</button> 
+                  <button type="button" class="btn btn-danger">Eliminar</button>
+                  <button type="button" class="btn btn-secondary">Habilitado</button>
+                </td>                
+                
+
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>McFiesta</td>
+                <td class="d-none d-lg-table-cell">Hamburguesa elaborada con carne 100% de carne vacuna, mayonesa, lechuga, tomate.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXxkywA/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton">
+                  <button type="button" class="btn btn-primary">Editar</button> 
+                  <button type="button" class="btn btn-danger">Eliminar</button>
+                  <button type="button" class="btn btn-secondary">Habilitado</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Big Mac</td>
+                <td class="d-none d-lg-table-cell">Quizás sean las dos hamburguesas de carne 100% vacuna con esa salsa especial y queso derretido, el toque de cebolla y la frescura de la lechuga o el crocante del pepino, lo que la hace la hamburguesa más famosa del mundo. Un sabor único.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXEH2NW/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton">
+                  <button type="button" class="btn btn-primary">Editar</button> 
+                  <button type="button" class="btn btn-danger">Eliminar</button>
+                  <button type="button" class="btn btn-secondary">Habilitado</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Doble cuarto libra con queso</td>
+                <td class="d-none d-lg-table-cell">Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXUf0Vf/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton"><button type="button" class="btn btn-primary">Editar</button> <button type="button" class="btn btn-danger">Eliminar</button></td>                
+                
+
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Doble cuarto libra con queso</td>
+                <td class="d-none d-lg-table-cell">Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXUf0Vf/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton"><button type="button" class="btn btn-primary">Editar</button> <button type="button" class="btn btn-danger">Eliminar</button></td>                
+                
+
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Doble cuarto libra con queso</td>
+                <td class="d-none d-lg-table-cell">Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXUf0Vf/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton"><button type="button" class="btn btn-primary">Editar</button> <button type="button" class="btn btn-danger">Eliminar</button></td>                
+                
+
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Doble cuarto libra con queso</td>
+                <td class="d-none d-lg-table-cell">Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXUf0Vf/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton"><button type="button" class="btn btn-primary">Editar</button> <button type="button" class="btn btn-danger">Eliminar</button></td>                
+                
+
+              </tr>
+
+
+              <tr>
+                <th scope="row">1</th>
+                <td>Doble cuarto libra con queso</td>
+                <td class="d-none d-lg-table-cell">Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXUf0Vf/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton"><button type="button" class="btn btn-primary">Editar</button> <button type="button" class="btn btn-danger">Eliminar</button></td>
+              </tr>
+
+              <tr>
+                <th scope="row"></th>
+                <td colspan="3" class="categoria">Pizzas</td>
+                <td><button class="btn btn-success badge-pill btnAgregar" >Agregar</button></td>
+
+              </tr>
+
+              <tr>
+                <th scope="row">1</th>
+                <td>Doble cuarto libra con queso</td>
+                <td class="d-none d-lg-table-cell">Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXUf0Vf/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton"><button type="button" class="btn btn-primary">Editar</button> <button type="button" class="btn btn-danger">Eliminar</button></td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Doble cuarto libra con queso</td>
+                <td class="d-none d-lg-table-cell">Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXUf0Vf/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton"><button type="button" class="btn btn-primary">Editar</button> <button type="button" class="btn btn-danger">Eliminar</button></td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Doble cuarto libra con queso</td>
+                <td class="d-none d-lg-table-cell">Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXUf0Vf/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton"><button type="button" class="btn btn-primary">Editar</button> <button type="button" class="btn btn-danger">Eliminar</button></td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Doble cuarto libra con queso</td>
+                <td class="d-none d-lg-table-cell">Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXUf0Vf/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton"><button type="button" class="btn btn-primary">Editar</button> <button type="button" class="btn btn-danger">Eliminar</button></td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Doble cuarto libra con queso</td>
+                <td class="d-none d-lg-table-cell">Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXUf0Vf/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton"><button type="button" class="btn btn-primary">Editar</button> <button type="button" class="btn btn-danger">Eliminar</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td colspan="3" class="categoria">Bebidas</td>
+                <td><button class="btn btn-success badge-pill btnAgregar" >Agregar</button></td>
+
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Doble cuarto libra con queso</td>
+                <td class="d-none d-lg-table-cell">Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXUf0Vf/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton"><button type="button" class="btn btn-primary">Editar</button> <button type="button" class="btn btn-danger">Eliminar</button></td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Doble cuarto libra con queso</td>
+                <td class="d-none d-lg-table-cell">Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXUf0Vf/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton"><button type="button" class="btn btn-primary">Editar</button> <button type="button" class="btn btn-danger">Eliminar</button></td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Doble cuarto libra con queso</td>
+                <td class="d-none d-lg-table-cell">Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXUf0Vf/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton"><button type="button" class="btn btn-primary">Editar</button> <button type="button" class="btn btn-danger">Eliminar</button></td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Doble cuarto libra con queso</td>
+                <td class="d-none d-lg-table-cell">Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.</td>
+                <td><img src="https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXUf0Vf/200/200/original?country=ar" alt=""></td>
+                <td class="tablaBoton"><button type="button" class="btn btn-primary">Editar</button> <button type="button" class="btn btn-danger">Eliminar</button></td>
+              </tr>            
+
+            </tbody>
+          </table>
+      </div>
+    </div>
+
+
+    <footer>
+      
+    </footer>
+
+</body>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/main.js"></script>
+
+<script type="text/javascript" src="../js/app.js"></script>
+
+</html>
